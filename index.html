@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hiba Sameen</title>
+<meta name="description" content="Hiba Sameen — research economist working on technology, productivity and labour markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1a1a;
+    --muted:#5c5853;
+    --faint:#8a857d;
+    --rule:#e0dcd3;
+    --bg:#faf8f4;
+    --accent:#6b2b2b;
+    --maxw:720px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size:18px;
+    line-height:1.6;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:64px 24px 96px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(107,43,43,.28);transition:border-color .15s}
+  a:hover{border-color:var(--accent)}
+
+  header{margin-bottom:8px}
+  h1{font-size:34px;font-weight:600;letter-spacing:-.01em;margin:0 0 6px}
+  .tagline{color:var(--muted);font-style:italic;font-size:18px;margin:0 0 14px;line-height:1.45}
+  .meta{color:var(--faint);font-size:15px;margin:0}
+  .meta a{color:var(--muted);border:none}
+  .meta a:hover{color:var(--accent)}
+  .meta .sep{color:var(--rule);margin:0 8px}
+
+  nav{margin:28px 0 0;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:15px}
+  nav a{color:var(--muted);border:none;margin-right:22px;letter-spacing:.02em}
+  nav a:hover{color:var(--accent)}
+
+  section{margin-top:48px;scroll-margin-top:24px}
+  h2{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);margin:0 0 18px;padding-bottom:0}
+  p{margin:0 0 16px}
+  .lead p:last-child{margin-bottom:0}
+
+  /* publications */
+  .pub{margin:0 0 20px;padding:0}
+  .pub:last-child{margin-bottom:0}
+  .pub .title{font-style:italic}
+  .pub .venue{font-weight:600}
+  .pub .status{color:var(--faint);font-size:15px;display:block;margin-top:2px}
+  .pub a.pdf{font-size:14px;color:var(--accent);font-weight:600;border:none}
+  .pub a.pdf:hover{text-decoration:underline}
+  .pub details{margin-top:8px}
+  .pub summary{cursor:pointer;font-size:14px;color:var(--muted);list-style:none;display:inline-block;border-bottom:1px dotted var(--faint)}
+  .pub summary::-webkit-details-marker{display:none}
+  .pub summary:hover{color:var(--accent)}
+  .pub details[open] summary{margin-bottom:8px}
+  .pub .abstract{font-size:15px;color:var(--muted);line-height:1.55;margin:0;padding-left:14px;border-left:2px solid var(--rule)}
+
+  /* project widgets */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+  .card{
+    display:block;
+    border:1px solid var(--rule);
+    border-radius:6px;
+    overflow:hidden;
+    background:#fff;
+    color:inherit;
+    text-decoration:none;
+    transition:border-color .15s, box-shadow .15s, transform .15s;
+  }
+  .card:hover{
+    border-color:var(--accent);
+    box-shadow:0 6px 22px rgba(26,26,26,.08);
+    transform:translateY(-2px);
+  }
+  .card .thumb{
+    display:block;width:100%;aspect-ratio:16/9;object-fit:cover;
+    background:#f0ece4 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="%23b8b0a3" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>') center/40px no-repeat;
+    border-bottom:1px solid var(--rule);
+  }
+  .card .body{padding:16px 18px 18px}
+  .card .ptitle{font-weight:600;font-size:19px;color:var(--ink);margin:0 0 4px}
+  .card .pdesc{color:var(--muted);font-size:15px;line-height:1.5;margin:0 0 10px}
+  .card .links{font-size:14px;color:var(--faint)}
+  .card .links .go{color:var(--accent);font-weight:600}
+  .card .links .sep2{margin:0 8px;color:var(--rule)}
+  .more{margin-top:22px;font-size:15px}
+  @media (max-width:560px){ .grid{grid-template-columns:1fr;gap:18px} }
+
+  footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);color:var(--faint);font-size:14px}
+
+  @media (max-width:520px){
+    body{font-size:17px}
+    .wrap{padding:44px 20px 72px}
+    h1{font-size:29px}
+    nav a{margin-right:16px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Hiba Sameen</h1>
+    <p class="tagline">Lead research economist — technology, productivity &amp; labour markets, applied econometrics and policy.</p>
+    <p class="meta">
+      <a href="mailto:hiba.sameen@gmail.com">hiba.sameen@gmail.com</a>
+      <span class="sep">·</span>London, UK
+      <span class="sep">·</span><a href="https://scholar.google.com/citations?user=FaZDLEUAAAAJ&hl=en" rel="me">Google Scholar</a>
+      <span class="sep">·</span><a href="https://github.com/hibasameen" rel="me">GitHub</a>
+      <span class="sep">·</span><a href="https://www.linkedin.com/in/hiba-sameen-86750819/" rel="me">LinkedIn</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+  <section id="about" class="lead">
+    <h2>About</h2>
+    <p>I am a PhD economist with more than fifteen years of experience across government, think tanks and academia, working on policy-relevant empirical economics: productivity, workforce transformation, technology adoption and large-scale administrative data.</p>
+    <p>I currently lead the economics function at the Health Foundation, covering NHS demand, funding, workforce, productivity and technology, and oversee the <a href="https://realsupply.ac.uk/" target="_blank" rel="noopener">REAL Supply Research Unit</a>, a partnership with the University of York. My work combines applied and structural econometrics, causal inference, machine learning, macro modelling and policy translation. I am particularly interested in how frontier AI reshapes tasks, occupations, productivity, inequality and public-policy choices.</p>
+    <p>Before this I was an Economic Adviser at the Department of Health &amp; Social Care, where I led COVID-19 health–economic impact analysis and presented evidence to <a href="https://www.gov.uk/government/publications/scientific-advisory-group-for-emergencies-sage-coronavirus-covid-19-response-membership/list-of-participants-of-sage-and-related-sub-groups" target="_blank" rel="noopener">SAGE</a>. I hold a PhD in Economics from Birkbeck, University of London.</p>
+  </section>
+
+  <section id="research">
+    <h2>Selected Research &amp; Policy Outputs</h2>
+
+    <div class="pub">
+      <span class="title">Prescribing Cost-effective Treatments under Financial Constraints in the English National Health Service</span> (with V. Dimitrova).
+      <span class="status">Working paper · <a class="pdf" href="papers/prescribing-cost-effective-treatments.pdf" target="_blank" rel="noopener">PDF</a></span>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">Medical innovations and improvements in healthcare have contributed to large improvements in welfare but also growing healthcare costs. At the same time, financial constraints in public sector institutions may affect the delivery of services. We examine whether hospital trusts with budget deficits prescribe new, cost-effective but expensive treatments for Hepatitis C differently. We compile a novel panel dataset of hospital trusts providing acute care in England, linking detailed data on financial statements, workforce statistics, prescribing volumes, hospital activity, and quality of care. We employ two complementary identification strategies: two-way fixed effects and an instrumental variables approach, using historical deficits and hospital activity in large disease groups as instruments for current financial positions. Our findings indicate that hospitals in worse financial positions prescribe fewer treatments: a 10% increase of a standard deviation in a trust's surplus (£2 million) is associated with a 1.7–2.7% increase in prescribing new Hepatitis C medicines. We rule out several potential mechanisms, including staff composition, drug costs, and quality of care.</p>
+      </details>
+    </div>
+    <div class="pub">
+      <span class="title">Demand for New Treatments and Cost Containment in the English National Health Service</span>.
+      <span class="status">Working paper · <a class="pdf" href="papers/demand-for-new-treatments.pdf" target="_blank" rel="noopener">PDF</a></span>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">This paper examines GP prescribing behavior for on-patent diabetes therapies in NHS England and quantifies their short-run impact on secondary-care use. Leveraging a rich practice-level panel and a structural demand framework that treats GPs as perfect patient agents, I instrument net price with exogenous rebate shocks under four alternative specifications. Implied own-price elasticities of uptake lie between −0.2 and −0.6, with smaller practices exhibiting greater sensitivity. Cross-price elasticities between the new-treatment class and legacy therapies are close to zero. A 2SLS IV estimation then links a one-percentage-point increase in the new-treatment share to a 4 percent rise in diabetes-related hospital admissions over two years—equating to roughly 0.25 additional episodes per practice. These results challenge the prevailing view that innovative therapies relieve secondary-care pressures, instead revealing meaningful short-term cost pressures. By integrating structural demand estimation with real-world outcome monitoring, this study offers a practical blueprint for evaluating the system-wide cost-effectiveness of novel treatments in universal health-care settings.</p>
+      </details>
+    </div>
+    <div class="pub">
+      <span class="title">Extending Patent Life: Impact on Replacement and Pre-emption Dynamics in the Pharmaceutical Industry</span>.
+      <span class="status">Working paper · <a class="pdf" href="papers/extending-patent-life.pdf" target="_blank" rel="noopener">PDF</a></span>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">This paper examines how pharmaceutical firms strategically time the launch of new products in response to patent protection and competitive pressure. I estimate a dynamic oligopoly model to assess whether revenue replacement or pre-emption motives primarily drive these innovation decisions. Removing the replacement channel raises launch probability to 79.0%, indicating that replacement motives dominate strategic delay. Conversely, eliminating pre-emption motives increases launch probabilities to 49.9%, suggesting that competitive entry pressures play a secondary but notable role. Overall, extending patent length by five years increases launch probabilities only modestly, from 1.80% to 2.05%, while materially strengthening replacement-driven delay incentives. These findings suggest that policies aimed at fostering pharmaceutical innovation should prioritise reducing replacement incentives rather than extending patent terms.</p>
+      </details>
+    </div>
+    <div class="pub">
+      Lee, N., Cowling, M. &amp; Sameen, H. (2015). <span class="title">Access to finance for innovative SMEs since the financial crisis</span>.
+      <span class="status"><span class="venue">Research Policy</span>, 44(2), 370–380 · <a class="pdf" href="https://www.sciencedirect.com/science/article/abs/pii/S0048733314001644" target="_blank" rel="noopener">Link</a></span>
+    </div>
+    <div class="pub">
+      Sameen, H., Iqbal, M., Abu-Zaineh, M., Mataria, A. &amp; Siddiqi, S. (2022). <span class="title">Decision-Making Tools for Informed Decisions by Health Policymakers and Managers</span>.
+      <span class="status">In <span class="venue">Making Health Systems Work in Low and Middle Income Countries</span>, Cambridge University Press · <a class="pdf" href="https://www.cambridge.org/core/books/making-health-systems-work-in-low-and-middle-income-countries/F8DD39AE15BBF146E7D8EE9D90411075" target="_blank" rel="noopener">Link</a></span>
+    </div>
+    <div class="pub">
+      <span class="title">Direct and Indirect Health Impacts of Covid-19 in England</span>.
+      <span class="status">Prepared for SAGE, September 2021 · <a class="pdf" href="https://assets.publishing.service.gov.uk/media/614486f0e90e070441639f92/S1373_Direct_and_Indirect_Health_Impacts_of_C19_Detailed_Paper_.pdf" target="_blank" rel="noopener">PDF</a></span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Data Projects</h2>
+    <p class="lead" style="color:var(--muted);font-size:16px">Interactive tools and visualisations built from public data. Click any card to open the live site.</p>
+    <div class="grid">
+
+      <a class="card" href="https://hibasameen.github.io/datadarbar/" target="_blank" rel="noopener">
+        <img class="thumb" loading="lazy" alt="Data Darbar preview"
+             src="https://hibasameen.github.io/datadarbar/assets/img/og-preview.png">
+        <div class="body">
+          <p class="ptitle">Data Darbar — Pakistan in Numbers</p>
+          <p class="pdesc">An interactive district-level map of Pakistan visualising census, PSLM, labour-force and HIES indicators, built on a Python ETL pipeline.</p>
+          <p class="links"><span class="go">Live site →</span><span class="sep2">·</span><a href="https://github.com/hibasameen/datadarbar" target="_blank" rel="noopener" onclick="event.stopPropagation()">Code</a></p>
+        </div>
+      </a>
+
+      <a class="card" href="https://hibasameen.github.io/election-projections/" target="_blank" rel="noopener">
+        <img class="thumb" loading="lazy" alt="UK Election Projection Tool preview"
+             src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhibasameen.github.io%2Felection-projections%2F?w=1200">
+        <div class="body">
+          <p class="ptitle">UK Election Projection Tool</p>
+          <p class="pdesc">A constituency-level seat projection model for UK general elections — uniform and proportional swing, tactical-voting scenarios, poll smoothing (Kalman/LOWESS) and an interactive 650-seat map, with a Bayesian hierarchical model underneath.</p>
+          <p class="links"><span class="go">Live site →</span><span class="sep2">·</span><a href="https://github.com/hibasameen/election-projections" target="_blank" rel="noopener" onclick="event.stopPropagation()">Code</a></p>
+        </div>
+      </a>
+
+      <a class="card" href="https://hibasameen.github.io/demopolis-london/" target="_blank" rel="noopener">
+        <img class="thumb" loading="lazy" alt="Demopolis London preview"
+             src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhibasameen.github.io%2Fdemopolis-london%2F?w=1200">
+        <div class="body">
+          <p class="ptitle">Demopolis London</p>
+          <p class="pdesc">An interactive map of London election results, exploring results and demographic patterns across the capital.</p>
+          <p class="links"><span class="go">Live site →</span><span class="sep2">·</span><a href="https://github.com/hibasameen/demopolis-london" target="_blank" rel="noopener" onclick="event.stopPropagation()">Code</a></p>
+        </div>
+      </a>
+
+      <a class="card" href="https://pop-proj-vis.up.railway.app/" target="_blank" rel="noopener">
+        <img class="thumb" loading="lazy" alt="Population Projection Visualiser preview"
+             src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fpop-proj-vis.up.railway.app%2F?w=1200">
+        <div class="body">
+          <p class="ptitle">Population Projection Visualiser</p>
+          <p class="pdesc">A Streamlit app for exploring population projections interactively — scenarios, age structure and demographic change over time.</p>
+          <p class="links"><span class="go">Live site →</span><span class="sep2">·</span><a href="https://github.com/hibasameen/pop-proj-comp" target="_blank" rel="noopener" onclick="event.stopPropagation()">Code</a></p>
+        </div>
+      </a>
+
+    </div>
+    <p class="more"><a href="https://github.com/hibasameen" target="_blank" rel="noopener">More projects on GitHub →</a></p>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p>A full curriculum vitae, including experience, education, methods and engagements, is available as a PDF.</p>
+    <p><a href="CV_Anthropic_Research_Economist.pdf">Download CV (PDF) →</a></p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Hiba Sameen.
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
